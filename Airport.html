@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AirJet - Book Flights Now</title>
+  <link rel="stylesheet" href="Airtport.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">✈️ AirJet</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#book">Book</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <h1 class="animated-heading">Fly Beyond Limits</h1>
+      <p>Book your next flight with comfort & speed</p>
+      <a href="#book" class="btn animated-btn">✈ Book Now</a>
+    </div>
+  </div>
+</section>
+
+
+ <section id="book" class="booking-form">
+  <h2>✈️ Book Your Flight</h2>
+  <form>
+    <div class="form-row">
+      <div class="form-group">
+        <label>From</label>
+        <input type="text" placeholder="e.g., Mumbai" required>
+      </div>
+      <div class="form-group">
+        <label>To</label>
+        <input type="text" placeholder="e.g., Delhi" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>Departure Date</label>
+        <input type="date" required>
+      </div>
+      <div class="form-group">
+        <label>Class</label>
+        <select required>
+          <option value="">Select</option>
+          <option value="Economy">Economy</option>
+          <option value="Business">Business</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-button">
+      <button type="submit">🔍 Search Flights</button>
+    </div>
+  </form>
+</section>
+
+<section id="student-offers" class="student-offers">
+  <h2>🎓 Student Special Offers</h2>
+  <p class="subtitle">Fly smart with exclusive discounts for students!</p>
+
+  <div class="offer-cards">
+    <div class="offer-card">
+      <h3>Up to 15% Off</h3>
+      <p>Enjoy discounted airfare on all domestic routes with valid student ID.</p>
+    </div>
+    <div class="offer-card">
+      <h3>Extra Baggage Allowance</h3>
+      <p>Carry up to 10kg extra baggage for free — perfect for student life!</p>
+    </div>
+    <div class="offer-card">
+      <h3>Priority Check-in</h3>
+      <p>Skip the line and save time with our fast-track check-in for students.</p>
+    </div>
+  </div>
+
+  <p class="note">* Valid for students aged 18-25 with a valid college ID. Terms & conditions apply.</p>
+</section>
+
+
+
+  <section id="destinations" class="destinations">
+    <h2>🌍 Top Travel Destinations</h2>
+    <p class="subtitle">Fly to the world's most iconic cities at unbeatable prices</p>
+
+    <div class="card-container">
+      <div class="destination-card">
+        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80" alt="Paris">
+        <div class="card-overlay">
+          <h3>Paris</h3>
+          <p>From ₹45,000</p>
+        </div>
+      </div>
+
+      <div class="destination-card">
+        <img src="https://www.visitlondon.com/-/media/images/london/visit/things-to-do/nightlife/tower-bridge-at-night1920x1080.png?mw=800&rev=515be6b142614f59b5e75e072c4ac905&hash=4EE2C2E9D2540601359FE846DC4B55C0" alt="London">
+        <div class="card-overlay">
+          <h3>London</h3>
+          <p>From ₹50,000</p>
+        </div>
+      </div>
+
+      <div class="destination-card">
+        <img src="https://cdn.shopify.com/s/files/1/0481/0457/1045/files/tokyo_tower_ville_nuit.jpg?v=1653044077" alt="Tokyo">
+        <div class="card-overlay">
+          <h3>Tokyo</h3>
+          <p>From ₹60,000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+ <section id="contact" class="contact">
+  <h2>📞 Contact Us</h2>
+  <p class="contact-subtitle">We're here to help you fly with ease</p>
+
+  <div class="contact-details">
+    <div class="contact-card">
+      <span>📧</span>
+      <div>
+        <h4>Email</h4>
+        <p>himanshusirvi3@gmail.com</p>
+      </div>
+    </div>
+    <div class="contact-card">
+      <span>📱</span>
+      <div>
+        <h4>Phone</h4>
+        <p>+91 8949624256</p>
+      </div>
+    </div>
+    <div class="contact-card">
+      <span>📍</span>
+      <div>
+        <h4>Location</h4>
+        <p>Mumbai Airport Terminal 2</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 <strong>AirJet Airlines</strong>. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

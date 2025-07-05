@@ -1,0 +1,442 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f9fafb;
+  color: #1f2937;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e3a8a;
+  color: white;
+  padding: 15px 30px;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.hero {
+  background-image: url('https://www.grupooneair.com/wp-content/uploads/2022/05/bernoullis-principle-why-do-aeroplanes-fly.jpeg'); /* airplane image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.6); /* dark overlay */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content {
+  color: #fff;
+  padding: 20px;
+  max-width: 700px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  animation: slideUp 1.2s ease-in-out;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background: #1e40af;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #2563eb;
+}
+
+/* Animations */
+@keyframes slideUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.btn {
+  background: #3b82f6;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.booking-form {
+  padding: 60px 20px;
+  background: #e0f2fe;
+  text-align: center;
+}
+
+.booking-form h2 {
+  font-size: 32px;
+  color: #1e3a8a;
+  margin-bottom: 30px;
+}
+
+form {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: slideIn 1.2s ease;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 200px;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #1f2937;
+  text-align: left;
+}
+
+input, select {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #3b82f6;
+}
+
+.form-button {
+  margin-top: 10px;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+/* Animation */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.student-offers {
+  padding: 60px 20px;
+  background: #f0f9ff;
+  text-align: center;
+}
+
+.student-offers h2 {
+  font-size: 30px;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.student-offers .subtitle {
+  font-size: 16px;
+  color: #475569;
+  margin-bottom: 30px;
+}
+
+.offer-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.offer-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px 20px;
+  max-width: 300px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.offer-card:hover {
+  transform: translateY(-8px);
+}
+
+.offer-card h3 {
+  font-size: 20px;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.offer-card p {
+  font-size: 15px;
+  color: #374151;
+}
+
+.student-offers .note {
+  font-size: 13px;
+  color: #64748b;
+  margin-top: 30px;
+}
+
+
+
+.destinations {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f9fafb;
+}
+
+.destinations h2 {
+  font-size: 34px;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+/* Card Grid */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Each Card */
+.destination-card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.destination-card:hover {
+  transform: translateY(-10px);
+}
+
+.destination-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.destination-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Overlay */
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: white;
+  text-align: left;
+}
+
+.card-overlay h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.card-overlay p {
+  margin: 5px 0 0;
+  font-size: 16px;
+}
+/* Optional ScrollReveal fade-in */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact {
+  background: linear-gradient(135deg, #e0f2fe, #f0f9ff);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 32px;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.contact-subtitle {
+  font-size: 16px;
+  color: #475569;
+  margin-bottom: 30px;
+}
+
+.contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px 25px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  min-width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-card span {
+  font-size: 28px;
+  color: #2563eb;
+}
+
+.contact-card h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #1f2937;
+}
+
+.contact-card p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #475569;
+}
+
+
+.footer {
+  background: #1e3a8a;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #93c5fd;
+}
